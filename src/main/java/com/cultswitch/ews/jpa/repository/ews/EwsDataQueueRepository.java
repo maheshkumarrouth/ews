@@ -14,5 +14,8 @@ public interface EwsDataQueueRepository extends JpaRepository<EwsDataQueue, Inte
 	
 	@Transactional(readOnly =true)
 	 List<EwsDataQueue> findAll();
+	
+	@Transactional(readOnly = true)
+	EwsDataQueue save(EwsDataQueue ewsDataQueue);
 
 }

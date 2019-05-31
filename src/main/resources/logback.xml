@@ -3,7 +3,7 @@
 
  <appender name="file"
     class="ch.qos.logback.core.rolling.RollingFileAppender">
-    <file>/cltz/logs/ews/ews.log</file>
+    <file>/www/logs/CultAgent/ews.log</file>
     <append>true</append>
     <encoder>
         <pattern>%date{ISO8601,Etc/UTC} %t %-5level %logger %msg%n
@@ -11,7 +11,7 @@
     </encoder>
     <rollingPolicy
         class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-        <fileNamePattern>/cltz/logs/ews/ews_%d{yyyy-MM-dd}.log</fileNamePattern>
+        <fileNamePattern>/www/logs/CultAgent/ews_%d{yyyy-MM-dd}.log</fileNamePattern>
     </rollingPolicy>
 </appender>
 
